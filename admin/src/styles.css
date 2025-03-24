@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    margin: 10px auto;
+    max-width: fit-content;
+    justify-content: space-between; /* Ensures spacing is even */
+  padding: 10px 20px; /* Adjust padding */
+  }
+  
+  
+  
+  .nav-links img{
+    height: 40px;
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #6C63FF;
+  }
+  
+  /* Create Job Button */
+  .create-job-btn {
+    background: linear-gradient(90deg, #6C63FF, #A763FF);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .create-job-btn:hover {
+    background: linear-gradient(90deg, #574bff, #8b43ff);
+  }
+
+  /* Filter Bar Container */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+  }
+  
+  /* Common Styling for Inputs and Dropdown */
+  .filter-input,
+  .filter-dropdown {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 8px;
+    width: 220px;
+    border: 1px solid #ddd;
+  }
+  
+  .filter-input input,
+  .filter-dropdown select {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Filter Icons */
+  .filter-icon {
+    color: gray;
+    font-size: 16px;
+  }
+  
+  /* Salary Filter Section */
+  .salary-filter {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    border: 1px solid #ddd;
+  }
+  
+  .salary-filter label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  /* Salary Slider Styling */
+  .custom-slider {
+    width: 100%;
+    height: 4px !important; /* Reduce slider thickness */
+  }
+  
+  .custom-slider .MuiSlider-thumb {
+    width: 12px;
+    height: 12px;
+  }
+  /* Job List Container */
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Individual Job Card */
+  .job-card {
+    width: 280px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Job Header (Company Logo & Time Badge) */
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  
+  /* Time Badge */
+  .time-badge {
+    background: #d1e7fd;
+    color: #007bff;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  /* Job Title */
+  .job-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Job Details */
+  .job-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Job Description */
+  .job-description {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Apply Now Button */
+  .apply-btn {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background: #0056b3;
+  }
+ 
+  /* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin:auto;
+  }
+  
+  /* Modal Heading */
+  .modal-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .modal-content input,
+  .modal-content select,
+  .modal-content textarea {
+    width: 100%;
+    padding: 12px 0;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .modal-content input:focus,
+  .modal-content select:focus,
+  .modal-content textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* Salary Range Input */
+  .modal-content input[type="number"] {
+    appearance: none; /* Standard */
+    -webkit-appearance: none; /* Chrome, Safari */
+    -moz-appearance: textfield; /* Firefox */
+    padding: 10px;
+  }
+  
+  /* Hide increment/decrement arrows in Chrome, Safari, Edge */
+  .modal-content input[type="number"]::-webkit-inner-spin-button,
+  .modal-content input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Textarea for Job Description */
+  .modal-content textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Buttons */
+  .modal-content button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  /* Save Draft Button */
+  .modal-content .save-draft {
+    background: #e0e0e0;
+    color: #333;
+  }
+  
+  .modal-content .save-draft:hover {
+    background: #d6d6d6;
+  }
+  
+  /* Publish Button */
+  .modal-content .publish {
+    background: #007bff;
+    color: white;
+  }
+  
+  .modal-content .publish:hover {
+    background: #0056b3;
+  }
+  /* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .filter-bar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
