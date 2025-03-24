@@ -26,7 +26,7 @@ const JobFormModal = ({ show, setShowModal, refreshJobs }) => {
     try {
       console.log("Submitting job:", formData); // Debugging: See what is being sent
 
-      const response = await axios.post("http://localhost:5000/api/jobs", formData);
+      const response = await axios.post("https://job-application-admin-interface.onrender.com/api/jobs", formData);
       console.log("Job Created:", response.data);
 
       if (refreshJobs) await refreshJobs(); // Await if refreshJobs is async
